@@ -1,0 +1,1492 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BGXXRFB0H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2BGXXRFB0H');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <title>SCHOOLGUARD™ - Complete School Management System | CBE & 8-4-4 Curriculum Support</title>
+  <meta name="description" content="EduPoa™ is Kenya's leading school management system supporting both CBE (Competency-Based Education) and 8-4-4 curricula. Features include student records, CBE assessments, portfolio management, parent portals, and comprehensive school administration tools.">
+  <meta name="keywords" content="school management system Kenya, CBE curriculum software, competency based education, 8-4-4 curriculum, student management, CBE assessment tools, school administration software, education technology Kenya, student portal, parent portal">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="EduPoa™ - Complete School Management System">
+  <meta property="og:description" content="Kenya's leading school management system supporting CBE and 8-4-4 curricula with advanced CBE assessment tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://schoolguard.netlify.app/">
+  <meta property="og:image" content="/static/img/dashboard.webp">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SchoolGuard™ - Complete School Management System">
+  <meta name="twitter:description" content="Kenya's leading school management system supporting CBE and 8-4-4 curricula.">
+  <meta name="twitter:image" content="/static/img/dashboard.webp">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EduPoa™",
+    "description": "Complete school management system supporting CBE and 8-4-4 curricula",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "15000",
+      "priceCurrency": "KES"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.ico" rel="icon">
+  <link href="/static/img/edupoa-touch-icon.png" rel="apple-touch-icon">
+  
+  <!-- PWA Meta Tags -->
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SCHOOLGUARD™">
+  <meta name="msapplication-TileColor" content="#008080">
+  <meta name="theme-color" content="#008080">
+  
+  <!-- Core Web Vitals Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preload" href="/static/img/newtmlogo.webp" as="image">
+  <link rel="preload" href="/static/img/dashboard.webp" as="image">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Toastr CSS (if you're not using Bootstrap toasts) -->
+<!-- In your base template's head section -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <!-- Vendor CSS Files -->
+
+  <link rel="stylesheet" href="/static/CACHE/css/output.af059ba5bdfa.css" type="text/css">
+</head>
+
+
+<body class="index-page">
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading EduPoa™ ...</div>
+  </div>
+
+  <!-- Network Status Indicator -->
+  <div class="network-status" id="networkStatus">
+    <span id="networkMessage">You're offline. Some features may be limited.</span>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <!-- <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="bi bi-moon-stars" id="themeIcon"></i>
+  </button> -->
+
+  <!-- PWA Install Banner - Hidden by default for web system -->
+  <!-- <div class="install-banner d-none" id="installBanner">
+    <i class="bi bi-download"></i>
+    <span>Add EduPoa to Home Screen for quick access</span>
+    <button id="installBtn">Add to Home</button>
+    <button class="close-btn" id="closeBanner">&times;</button>
+  </div> -->
+
+    <!-- PWA Install Banner -->
+    <!-- <div class="install-banner" id="installBanner">
+      <i class="bi bi-download"></i>
+      <span>Install EduPoa for a better experience</span>
+      <button id="installBtn">Install</button>
+      <button class="close-btn" id="closeBanner">&times;</button>
+    </div> -->
+  
+ 
+  
+   
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="logo.png" alt="SchoolGuard™ Logo" class="img-fluid" style="max-height: 70px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <!-- <li><a href="/pricing/">Pricing</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#" class="btn btn-primary rounded-pill px-3 py-2 ms-2" data-bs-toggle="modal" data-bs-target="#demoModal" style="color: white !important;">Book Demo</a></li> -->
+          
+          <!-- Desktop Auth Buttons -->
+          <li class="d-none d-lg-flex align-items-center ms-lg-3 gap-2">
+                            <a class="btn btn-outline-primary rounded-pill px-3 py-2 login-btn" href="/login/">Login</a>
+                <a class="btn btn-primary rounded-pill px-3 py-2 signup-btn" href="/signup/">Sign Up</a>
+          </li>
+
+          <!-- Mobile Auth Buttons -->
+          <li class="d-lg-none">
+            <div class="d-flex gap-2 mobile-auth-buttons">
+                              <a class="btn btn-outline-primary rounded-pill px-3 py-2 login-btn flex-grow-1" href="/login/">Login</a>
+                <a class="btn btn-primary rounded-pill px-3 py-2 signup-btn flex-grow-1" href="/signup/">Sign Up</a>
+            </div>
+          </li>
+      
+        </ul>
+
+        <!-- Mobile Toggle Button -->
+        <i class="mobile-nav-toggle d-lg-none bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"></i>
+      </nav>
+    </div>
+</header>
+
+<!-- Bootstrap Modal (Form Popup) -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="demoModalLabel">Book a Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="demoForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="school" class="form-label">School Name</label>
+            <input type="text" class="form-control" id="school" required>
+          </div>
+          <a href="#" class="btn btn-primary w-100" onclick="sendToWhatsApp()">Submit & Contact via WhatsApp</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <main class="main">
+
+    
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+              <div class="col-lg-6">
+                  <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                      <div class="company-badge mb-4">
+                          <i class="bi bi-award me-2"></i>
+                          Trusted by 500+ Schools
+                      </div>
+  
+                      <h1 class="mb-4">
+                          Complete School Management <br>
+                          for <span class="accent-text">CBE & 8-4-4</span> <br>
+                          Curricula
+                      </h1>
+  
+                      <p class="mb-4 mb-md-5">
+                          Kenya's leading school management system with advanced CBE (Competency-Based Education) 
+                          tools, comprehensive 8-4-4 support, student portfolios, and seamless parent engagement—all in one platform.
+                      </p>
+  
+                      <div class="hero-buttons">
+                          <!-- <a href="/signup/" class="btn btn-primary btn-sm">Get Started</a> -->
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#demoModal" class="btn btn-primary btn-sm">Book a Demo</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-6">
+                  <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+                      <img src="/static/img/dashboard.webp" alt="EduPoa™ Dashboard" class="img-fluid">
+                      <div class="customers-badge">
+                          <p class="mb-0 mt-2">Used by 10,000+ Students and Teachers</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+              <div class="col-lg-4 col-md-6">
+                  <div class="stat-item">
+                      <div class="stat-icon">
+                          <i class="bi bi-building"></i>
+                      </div>
+                      <div class="stat-content">
+                          <h4>500+ Schools Trust EduPoa™</h4>
+                          <p class="mb-0">Helping institutions streamline operations</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="stat-item">
+                      <div class="stat-icon">
+                          <i class="bi bi-people"></i>
+                      </div>
+                      <div class="stat-content">
+                          <h4>10,000+ Students Managed</h4>
+                          <p class="mb-0">Seamless student record tracking</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="stat-item">
+                      <div class="stat-icon">
+                          <i class="bi bi-headset"></i>
+                      </div>
+                      <div class="stat-content">
+                          <h4>24/7 Support</h4>
+                          <p class="mb-0">Reliable assistance for schools anytime</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+    <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center justify-content-between">
+            <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+                <span class="about-meta">ABOUT SchoolGuard™</span>
+                <h2 class="about-title">Transforming School Management with Innovation</h2>
+                <p class="about-description">
+                    SchoolGuard™ is an all-in-one student management system designed to simplify 
+                    school operations. From results tracking to report generation, we 
+                    empower educators and administrators to focus on what truly matters—education.
+                </p>
+
+                <div class="row feature-list-wrapper">
+                    <div class="col-md-6">
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Automated Student's Performance Tracking</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Student & Teacher Performance Analytics</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Parent-Teacher Communication</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Secure Cloud-Based Storage</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Easy Integration with School Systems</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 24/7 Support & Training</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-wrapper">
+                    <div class="row gy-4">
+                        <div class="col-lg-5">
+                            <div class="profile d-flex align-items-center gap-3">
+                                <img src="/static/img/galaxy.webp" alt="EduPoa™ CEO" class="profile-image">
+                                <div>
+                                    <h4 class="profile-name">Developed By</h4>
+                                    <p class="profile-position"><a href="https://toplinksystem.netlify.app/">TOPLINK SOLUTIONS</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="contact-info d-flex align-items-center gap-2">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div>
+                                    <p class="contact-label">Get in touch</p>
+                                    <p class="contact-number">+254 114 963 959</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="image-wrapper">
+                    <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                        <img src="/static/img/finance.webp" alt="EduPoa™ System Dashboard" class="img-fluid main-image rounded-4">
+                        <img src="/static/img/dashboard2.webp" alt="School Administrators Using EduPoa™" class="img-fluid small-image rounded-4">
+                    </div>
+                    <div class="experience-badge floating">
+                        <h3>5+ <span>Years</span></h3>
+                        <p>of innovation in school management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section><!-- /About Section -->
+
+  <!-- CBE Showcase Section -->
+  <section id="cbe-showcase" class="cbe-showcase section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Advanced CBE (Competency-Based Education) Features</h2>
+      <p>Revolutionizing education with Kenya's most comprehensive CBE implementation</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="cbe-content">
+            <div class="cbe-feature-item mb-4" data-aos="fade-right" data-aos-delay="200">
+              <div class="d-flex align-items-start gap-3">
+                <div class="cbe-icon">
+                  <i class="fa fa-bullseye"></i>
+                </div>
+                <div>
+                  <h4>Core Competency Tracking</h4>
+                  <p>Map and monitor the 7 universal core competencies across all learning areas with detailed progress analytics and automated reporting.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cbe-feature-item mb-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="d-flex align-items-start gap-3">
+                <div class="cbe-icon">
+                  <i class="fa fa-folder-open"></i>
+                </div>
+                <div>
+                  <h4>Digital Portfolio Management</h4>
+                  <p>Comprehensive learner portfolios with evidence collection, quality assessment, and competency demonstrations across multiple formats.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cbe-feature-item mb-4" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-start gap-3">
+                <div class="cbe-icon">
+                  <i class="fa fa-chart-line"></i>
+                </div>
+                <div>
+                  <h4>Learning Outcome Monitoring</h4>
+                  <p>Real-time tracking of specific learning outcomes with predictive analytics to identify students needing additional support.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cbe-feature-item" data-aos="fade-right" data-aos-delay="500">
+              <div class="d-flex align-items-start gap-3">
+                <div class="cbe-icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <div>
+                  <h4>Parent CBE Portal</h4>
+                  <p>Dedicated parent interface showing competency development, learning progression, and detailed explanations of CBE assessment levels.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-primary btn-lg demo-btn" data-bs-toggle="modal" data-bs-target="#cbeDemo">
+                <i class="bi bi-play-circle me-2"></i>Watch CBE Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-out" data-aos-delay="200">
+          <div class="cbe-demo-container">
+            <img src="/static/img/grades%202.webp" alt="CBE Assessment Interface" class="img-fluid rounded-4 shadow-lg">
+            <div class="cbe-badge floating">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-award-fill text-warning"></i>
+                <div>
+                  <div class="fw-bold">CBE Compliant</div>
+                  <small>KICD Approved</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /CBE Showcase Section -->
+
+  <!-- Interactive Demo Modal -->
+  <div class="modal fade" id="cbeDemo" tabindex="-1" aria-labelledby="cbeDemoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="cbeDemoLabel">CBE System Interactive Demo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="demo-container">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="CBE Demo Video" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Features Cards Section -->
+<section id="features-cards" class="features-cards section">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="feature-box cbe-primary">
+          <i class="fa fa-trophy"></i>
+          <h4>CBE Assessment Tools</h4>
+          <p>Advanced competency-based evaluation with portfolio tracking and learning outcome monitoring.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="feature-box traditional">
+          <i class="fa fa-chart-line"></i>
+          <h4>8-4-4 Grade Management</h4>
+          <p>Complete traditional grading system with exam management and comprehensive report cards.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="feature-box parent-portal">
+          <i class="fa fa-users"></i>
+          <h4>Parent Engagement Portal</h4>
+          <p>Real-time access to student progress, CBE competency development, and school communication.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="feature-box finance">
+          <i class="fa fa-wallet"></i>
+          <h4>Financial Management</h4>
+          <p>Complete fee tracking, invoice generation, and financial reporting with payment integration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features 2 Section -->
+  <section id="features-2" class="features-2 section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>Accessible Anywhere</h3>
+                <p>Access SchoolGuard™ from any device, ensuring seamless school management on the go.</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-laptop"></i>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>Secure & Reliable</h3>
+                <p>Advanced security measures protect student data and ensure privacy compliance.</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-lock"></i>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>Automated Reports</h3>
+                <p>Generate insightful reports for student performance, attendance, and financial tracking.</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-chart-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="phone-mockup text-center">
+            <img src="/static/img/grades%202.webp" alt="Phone Mockup" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-code-branch"></i>
+              </div>
+              <div class="feature-content">
+                <h3>Modern & Intuitive UI</h3>
+                <p>A user-friendly interface designed for effortless navigation and usability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-mobile-alt"></i>
+              </div>
+              <div class="feature-content">
+                <h3>Mobile Friendly</h3>
+                <p>SchoolGuard™ is optimized for mobile devices, allowing access from smartphones and tablets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="feature-content">
+                <h3>Cross-Browser Compatibility</h3>
+                <p>Works seamlessly across all modern web browsers for a consistent experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>What Schools Say About SchoolGuard™</h2>
+      <p>Trusted by 500+ schools across Kenya for both CBE and 8-4-4 curriculum management</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon mb-3">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"SchoolGuard™'s CBE tools have transformed how we implement the new curriculum. The competency tracking and portfolio management features are exceptional, and our teachers love the user-friendly interface."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="/static/img/testimonial-1.jpg" alt="Principal Sarah Wanjiku" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-fallback" style="display: none;">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+              <div class="author-info">
+                <h5>Principal Sarah Wanjiku</h5>
+                <span>Greenfield Academy, Nairobi</span>
+                <div class="rating">
+                  <i class="fa fa-star-fill"></i>
+                  <i class="fa fa-star-fill"></i>
+                  <i class="fa fa-star-fill"></i>
+                  <i class="fa fa-star-fill"></i>
+                  <i class="fa fa-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon mb-3">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">"The parent portal is incredible! I can track my child's competency development in real-time and understand exactly what the new CBE system means for their learning progress."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="/static/img/testimonial-2.jpg" alt="Parent Mary Kiprotich" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-fallback" style="display: none;">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+              <div class="author-info">
+                <h5>Mary Kiprotich</h5>
+                <span>Parent, St. Joseph Primary</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon mb-3">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">"Managing both 8-4-4 and CBE students was challenging until we found SchoolGuard™. The system seamlessly handles both curricula, and the financial management tools have streamlined our operations."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="/static/img/testimonial-3.jpg" alt="Director James Mwangi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-fallback" style="display: none;">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+              <div class="author-info">
+                <h5>Director James Mwangi</h5>
+                <span>Malaika Secondary School</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="quote-icon mb-3">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">"The mobile app and responsive design mean I can manage school operations anywhere. The 24/7 support team has been outstanding in helping us maximize the platform's potential."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="/static/img/testimonial-4.jpg" alt="Administrator Grace Mutua" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-fallback" style="display: none;">
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+              <div class="author-info">
+                <h5>Grace Mutua</h5>
+                <span>Administrator, Sunrise Schools</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /Testimonials Section -->
+
+    <!-- Faq Section -->
+   <!-- FAQ Section -->
+  <section class="faq-9 faq section light-background" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" data-aos="fade-up">
+          <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+          <p class="faq-description">Find answers to common questions about EduPoa™'s functionality, security, and support.</p>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+          <div class="faq-container">
+            <div class="faq-item faq-active">
+              <h3>How does SchoolGuard™ support both CBE and 8-4-4 curricula?</h3>
+              <div class="faq-content">
+                <p>SchoolGuard™ seamlessly manages both curriculum systems. For CBE, we provide advanced competency tracking, portfolio management, and learning outcome monitoring. For 8-4-4, we offer traditional grading, exam management, and comprehensive report generation—all in one platform.</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>What CBE features does EduPoa™ offer?</h3>
+              <div class="faq-content">
+                <p>Our CBE tools include core competency mapping across 7 universal competencies, digital portfolio management, learning outcome tracking, formative assessment tools, and a dedicated parent portal that explains competency development in simple terms.</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>How secure is student data on EduPoa™?</h3>
+              <div class="faq-content">
+                <p>We implement bank-level security with encrypted data storage, role-based access control, regular security audits, and compliance with international data protection standards. Your school's data is completely secure and private.</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>How do teachers and parents access EduPoa™?</h3>
+              <div class="faq-content">
+                <p>Teachers and parents can securely log in using their provided credentials. The system supports email-based login, password recovery, and two-factor authentication for extra security.</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>What kind of support does SchoolGuard™ offer?</h3>
+              <div class="faq-content">
+                <p>EduPoa™ offers 24/7 customer support, training sessions for new users, and regular system updates to ensure optimal performance and security.</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /FAQ Section -->
+
+
+  
+
+    <!-- Contact Section -->
+  <section id="contact" class="contact section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for inquiries, support, or partnership opportunities.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>Contact Info</h3>
+            <p>Reach out to us for any questions regarding SchoolGuard™.</p>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="content">
+                <h4>Our Location</h4>
+                <p>Nairobi , Kenya</p>
+              </div>
+            </div>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="content">
+                <h4>Phone Number</h4>
+                <p>+254 114 963 959</p>
+                
+              </div>
+            </div>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="content">
+                <h4>Email Address</h4>
+                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d9ded6dff0d5d4c5c0dfd19ed3dfdd">[email&#160;protected]</a></p>
+                
+               <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+            <h3>Get In Touch</h3>
+            <p>Fill in the form below, and our team will respond as soon as possible.</p>
+
+            <form  method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">SchoolGuard™</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 114 963 959</span></p>
+            <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dbb2b5bdb49bbebfaeabb4baf5b8b4b6">[email&#160;protected]</a></span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/GSoftwares20247"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61565222382311"><i class="bi bi-facebook"></i></a>
+    
+            <a href="https://www.linkedin.com/company/galaxyxpert-softwares/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BSg%2BcxO4ySJeU94YlJLtntQ%3D%3D"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Data Protection</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Compliance</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+   <div class="container copyright text-center mt-4">
+  <p>© <span id="year"></span> <span>Copyright</span> 
+    <strong class="px-1 sitename">SchoolGuard™</strong> 
+    <span>All Rights Reserved</span>
+  </p>
+</div>
+
+      <div class="credits">
+        Designed by <a href="https://toplinksolutions.netlify.app/">TOPLINK SOLUTIONS</a>
+      </div>
+    </div>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/CACHE/js/output.efc6dcfddcf5.js"></script>
+
+  <!-- Bootstrap & JavaScript -->
+
+
+<script>
+
+document.querySelectorAll('[data-plan]').forEach(button => {
+  button.addEventListener('click', function() {
+    // Update active button
+    document.querySelectorAll('[data-plan]').forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+    
+    // Show/hide prices
+    const planType = this.dataset.plan;
+    document.querySelectorAll('.monthly-price, .annual-price').forEach(price => {
+      price.classList.add('d-none');
+    });
+    document.querySelectorAll(`.${planType}-price`).forEach(price => {
+      price.classList.remove('d-none');
+    });
+  });
+});
+
+
+function sendToWhatsApp() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let school = document.getElementById("school").value;
+
+    if (name && email && phone && school) {
+        let message = `Hello, I would like to book a demo for EduPoa™. Here are my details:%0A%0A` +
+                      `👤 Name: ${name}%0A` +
+                      `📧 Email: ${email}%0A` +
+                      `📞 Phone: ${phone}%0A` +
+                      `🏫 School: ${school}`;
+
+        let whatsappURL = `https://wa.me/254758758702?text=${message}`;
+        window.open(whatsappURL, "_blank");
+    } else {
+        alert("Please fill in all fields.");
+    }
+}
+</script>
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<!-- Modern UI Enhancements Script -->
+<script>
+// PWA Installation & Service Worker
+let deferredPrompt;
+
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/static/sw.js')
+            .then(registration => {
+                console.log('SW registered: ', registration);
+                
+                // Check for updates
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            // Show update available notification
+                            showUpdateAvailable();
+                        }
+                    });
+                });
+            })
+            .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
+
+// PWA Install Banner - Only show on mobile devices
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    
+    // Only show on mobile devices and if user hasn't dismissed
+    if (window.innerWidth <= 768 && !localStorage.getItem('pwa-dismissed')) {
+        setTimeout(() => {
+            const installBanner = document.getElementById('installBanner');
+            if (installBanner) {
+                installBanner.classList.remove('d-none');
+                installBanner.classList.add('show');
+            }
+        }, 10000); // Show after 10 seconds instead of 3
+    }
+});
+
+// Install PWA
+document.getElementById('installBtn')?.addEventListener('click', async () => {
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        deferredPrompt = null;
+        document.getElementById('installBanner').classList.remove('show');
+    }
+});
+
+// Close install banner
+document.getElementById('closeBanner')?.addEventListener('click', () => {
+    document.getElementById('installBanner').classList.remove('show');
+    localStorage.setItem('pwa-dismissed', 'true');
+});
+
+// Dark Mode Toggle
+class ThemeManager {
+    constructor() {
+        this.theme = localStorage.getItem('theme') || 'light';
+        this.init();
+    }
+
+    init() {
+        this.applyTheme();
+        this.bindEvents();
+    }
+
+    applyTheme() {
+        document.documentElement.setAttribute('data-theme', this.theme);
+        this.updateIcon();
+    }
+
+    updateIcon() {
+        const icon = document.getElementById('themeIcon');
+        if (icon) {
+            icon.className = this.theme === 'dark' ? 'bi bi-sun' : 'bi bi-moon-stars';
+        }
+    }
+
+    toggle() {
+        this.theme = this.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', this.theme);
+        this.applyTheme();
+        
+        // Add micro-animation
+        const toggle = document.getElementById('themeToggle');
+        toggle.style.transform = 'translateY(-50%) scale(0.9)';
+        setTimeout(() => {
+            toggle.style.transform = 'translateY(-50%) scale(1)';
+        }, 150);
+    }
+
+    bindEvents() {
+        document.getElementById('themeToggle')?.addEventListener('click', () => {
+            this.toggle();
+        });
+    }
+}
+
+// Initialize theme manager
+const themeManager = new ThemeManager();
+
+// Loading State Management
+class LoadingManager {
+    constructor() {
+        this.isLoading = true;
+        this.init();
+    }
+
+    init() {
+        // Simulate loading time and hide overlay
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                this.hideLoading();
+            }, 1000);
+        });
+    }
+
+    showLoading() {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay) {
+            overlay.classList.remove('fade-out');
+            this.isLoading = true;
+        }
+    }
+
+    hideLoading() {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay) {
+            overlay.classList.add('fade-out');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 500);
+            this.isLoading = false;
+        }
+    }
+
+    showSkeletons() {
+        // Replace content with skeleton loaders
+        document.querySelectorAll('.content-section').forEach(section => {
+            if (!section.querySelector('.skeleton')) {
+                section.innerHTML = this.generateSkeleton();
+            }
+        });
+    }
+
+    generateSkeleton() {
+        return `
+            <div class="skeleton skeleton-text large"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-image"></div>
+        `;
+    }
+}
+
+// Initialize loading manager
+const loadingManager = new LoadingManager();
+
+// Network Status Monitor
+class NetworkMonitor {
+    constructor() {
+        this.isOnline = navigator.onLine;
+        this.init();
+    }
+
+    init() {
+        window.addEventListener('online', () => this.handleOnline());
+        window.addEventListener('offline', () => this.handleOffline());
+        this.updateStatus();
+    }
+
+    handleOnline() {
+        this.isOnline = true;
+        this.updateStatus();
+        this.showNotification('Back online! All features restored.', 'success');
+        
+        // Hide status bar after 3 seconds
+        setTimeout(() => {
+            this.hideStatus();
+        }, 3000);
+    }
+
+    handleOffline() {
+        this.isOnline = false;
+        this.updateStatus();
+        this.showNotification('You\'re offline. Some features may be limited.', 'warning');
+    }
+
+    updateStatus() {
+        const statusBar = document.getElementById('networkStatus');
+        const message = document.getElementById('networkMessage');
+        
+        if (!this.isOnline) {
+            statusBar.classList.add('offline');
+            message.textContent = 'You\'re offline. Some features may be limited.';
+        } else {
+            statusBar.classList.remove('offline');
+            statusBar.classList.add('online');
+            message.textContent = 'Back online! All features restored.';
+        }
+    }
+
+    hideStatus() {
+        const statusBar = document.getElementById('networkStatus');
+        statusBar.classList.remove('offline', 'online');
+    }
+
+    showNotification(message, type) {
+        if (typeof toastr !== 'undefined') {
+            toastr[type](message);
+        }
+    }
+}
+
+// Initialize network monitor
+const networkMonitor = new NetworkMonitor();
+
+// Enhanced Animations & Micro-interactions
+class AnimationManager {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.observeElements();
+        this.addRippleEffect();
+        this.enhanceFormInteractions();
+    }
+
+    observeElements() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    this.animateElement(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe all animatable elements
+        document.querySelectorAll('.feature-box, .testimonial-card, .stat-item').forEach(el => {
+            observer.observe(el);
+        });
+    }
+
+    animateElement(element) {
+        // Add random animation class
+        const animations = ['animate-slide-up', 'animate-fade-in'];
+        const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+        element.classList.add(randomAnimation);
+    }
+
+    addRippleEffect() {
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const ripple = document.createElement('span');
+                const rect = button.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                button.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    }
+
+    enhanceFormInteractions() {
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('focus', (e) => {
+                e.target.style.transform = 'scale(1.02)';
+                e.target.style.boxShadow = '0 0 0 3px rgba(0, 128, 128, 0.1)';
+            });
+
+            input.addEventListener('blur', (e) => {
+                e.target.style.transform = 'scale(1)';
+                e.target.style.boxShadow = 'none';
+            });
+        });
+    }
+}
+
+// Initialize animation manager
+const animationManager = new AnimationManager();
+
+// Performance Optimization
+class PerformanceOptimizer {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.lazyLoadImages();
+        this.prefetchCriticalResources();
+        this.optimizeScrolling();
+    }
+
+    lazyLoadImages() {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+
+    prefetchCriticalResources() {
+        // Prefetch important pages
+        const criticalPages = ['/dashboard/', '/pricing/', '/signup/'];
+        criticalPages.forEach(page => {
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = page;
+            document.head.appendChild(link);
+        });
+    }
+
+    optimizeScrolling() {
+        let ticking = false;
+        
+        function updateScrollEffects() {
+            // Add parallax effect to hero section
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.5;
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollEffects);
+                ticking = true;
+            }
+        });
+    }
+}
+
+// Initialize performance optimizer
+const performanceOptimizer = new PerformanceOptimizer();
+
+// Update notification
+function showUpdateAvailable() {
+    if (typeof toastr !== 'undefined') {
+        toastr.info('A new version is available! Refresh to update.', '', {
+            timeOut: 10000,
+            extendedTimeOut: 5000,
+            onclick: () => window.location.reload()
+        });
+    }
+}
+
+// Enhanced Error Handling
+window.addEventListener('error', (e) => {
+    console.error('Global error:', e.error);
+    // Log to analytics service in production
+});
+
+window.addEventListener('unhandledrejection', (e) => {
+    console.error('Unhandled promise rejection:', e.reason);
+    // Log to analytics service in production
+});
+
+// Performance Metrics (Web Vitals)
+function measureWebVitals() {
+    // Measure and log Core Web Vitals
+    new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+            console.log('LCP:', entry.startTime);
+        }
+    }).observe({entryTypes: ['largest-contentful-paint']});
+
+    new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+            console.log('FID:', entry.processingStart - entry.startTime);
+        }
+    }).observe({entryTypes: ['first-input']});
+
+    new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+            if (!entry.hadRecentInput) {
+                console.log('CLS:', entry.value);
+            }
+        }
+    }).observe({entryTypes: ['layout-shift']});
+}
+
+// Initialize Web Vitals measurement
+measureWebVitals();
+
+// Add CSS for ripple effect
+const style = document.createElement('style');
+style.textContent = `
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(0);
+        animation: ripple-animation 0.6s linear;
+        pointer-events: none;
+    }
+
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+</script>
+
+<script>
+// Configure Toastr
+// Configure Toastr (put this in your base template)
+toastr.options = {
+    "closeButton": true,
+    "progressBar": true,
+    "positionClass": "toast-top-right",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+};
+
+// Check for login toast on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Check both sessionStorage and localStorage as fallback
+
+    
+    const showToast = sessionStorage.getItem('showLoginToast') || localStorage.getItem('showLoginToast');
+    const message = sessionStorage.getItem('loginMessage') || localStorage.getItem('loginMessage');
+    
+    if (showToast && message) {
+        toastr.success(message);
+        // Clear the flags from both storage locations
+        sessionStorage.removeItem('showLoginToast');
+        sessionStorage.removeItem('loginMessage');
+        localStorage.removeItem('showLoginToast');
+        localStorage.removeItem('loginMessage');
+    }
+});
+
+
+
+
+</script>
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"adcb1070a74d4ac48408d8556fdcdbbc","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
